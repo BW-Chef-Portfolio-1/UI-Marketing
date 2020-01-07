@@ -187,6 +187,11 @@ a {
   font-size: 2.4rem;
   background-color: #07FE20;
   color: #1F1E1E;
+  padding: 0.8rem 0.6rem;
+  margin-right: 6%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
 .headerContainer img {
   width: 100%;
@@ -208,9 +213,8 @@ a {
   color: #07FE20;
 }
 .headerContainer .headerNav {
-  margin-bottom: 4%;
-  margin-left: 5%;
-  width: 90%;
+  margin-bottom: 1%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 7.2rem;
@@ -221,17 +225,72 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-grow: 1;
   padding: 1% 0%;
   font-size: 1.8rem;
   background-color: #2F2D2D;
 }
 .headerContainer .headerSearch p {
-  width: 50%;
+  width: 55%;
   padding-top: 0.25%;
   font-style: italic;
+  font-size: 1.8rem;
+  color: white;
 }
 .headerContainer .headerSearch input {
   width: 45%;
   background-color: #828080;
   color: #1F1E1E;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 300px;
+}
+footer h1 {
+  font-size: 4.8rem;
+  margin-top: 193px;
+  padding-bottom: 56px;
+}
+footer h1 .Chef {
+  color: #07FE20;
+}
+footer h1 .Port {
+  color: white;
+}
+footer h1 .Period {
+  color: #07FE20;
+}
+footer .footerImages {
+  width: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2.5rem;
+}
+footer .footerImages img {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 2rem;
+}
+footer #facebook {
+  padding-right: 2.3rem;
+  padding-left: 2.3rem;
+}
+footer nav {
+  width: 45%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10.1rem;
+}
+footer nav a {
+  color: white;
+  font-size: 2.1rem;
+}
+footer p {
+  font-size: 2rem;
+  color: #828080;
 }
