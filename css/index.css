@@ -109,7 +109,7 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  list-style: dot;
 }
 blockquote,
 q {
@@ -293,4 +293,44 @@ footer nav a {
 footer p {
   font-size: 2rem;
   color: #828080;
+}
+.headlineSection {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 8.9rem auto;
+  font-size: 6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  background-color: #2F2D2D;
+  color: #07FE20;
+}
+.interactSection {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+.interactSection .interactImg {
+  width: 40%;
+  padding: 2% 0;
+  background-color: #07FE20;
+  text-align: center;
+}
+.interactSection .interactText {
+  width: 60%;
+  padding: 2% 0;
+  background-color: #2F2D2D;
+}
+.interactSection .interactText ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 100%;
+  width: 90%;
+  padding-left: 6rem;
+}
+.interactSection .interactText ul li {
+  font-size: 4.8rem;
+  color: #07FE20;
 }
