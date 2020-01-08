@@ -8,6 +8,12 @@
     padding-bottom: 2rem;
     background-color: @section-color;
     color: @primary-color;
+
+    @media @mobile {
+        width: 100%;
+        margin: 2rem auto 2rem auto;
+        font-size: 2.4rem;
+    }
 }
 .navButton {
     width: 20%;
@@ -20,22 +26,40 @@
     justify-content: center;
     border-radius: 10px;
     align-items: flex-start;
+
+    @media @mobile {
+        width: 60%;
+        margin: 0 auto 2rem auto;
+    }
 }
 .interactSection {
     width: 80%;
     display: flex;
     margin: 0 auto;
 
+    @media @mobile {
+        width: 100%;
+        flex-direction: column;
+    }
+
     .interactImg {
         width: 40%;
         padding: 2% 0;
         background-color: @primary-color;
         text-align: center;
+
+        @media @mobile {
+            display: none;
+        }
     }
     .interactText {
         width: 60%;
         padding: 2% 0;
         background-color: @section-color;
+
+        @media @mobile {
+            width: 100%;
+        }
 
         ul {
             display: flex;
@@ -49,6 +73,10 @@
             li {
                 font-size: 4.8rem;
                 color: @primary-color;
+
+                @media @mobile {
+                    font-size: 2.4rem;
+                }
             }
         }
     }
@@ -61,17 +89,34 @@
         padding:4rem;
         width:60%;
         margin: 0 auto;
+
+        @media @mobile {
+            width: 100%;
+            justify-content: center;
+        }
         #phoneTrioOne{
             padding-right:3rem;
+
+            @media @mobile {
+                padding: 0;
+            }
         }
 
         #phoneTrioTwo{
             position: absolute;
             padding:10rem;
             z-index: 99;
+
+            @media @mobile {
+                display: none;
+            }
         }
         #phoneTrioThree{
             padding-left:3rem;
+
+            @media @mobile {
+                display: none;
+            }
         }
        
     }
@@ -81,12 +126,23 @@
         margin:0 auto;
         display:flex;
         justify-content: space-around;
+
+        @media @mobile {
+            width: 100%;
+            padding: 4rem 0 4rem 0;
+        }
            #phoneButtonOne{
             color: @primary-color;
             background-color:@section-color;
             border-radius: 10px;
             padding:1rem 8rem;
             font-size: 2.4rem;
+
+            @media @mobile {
+                width: 48%;
+                padding: 1rem 4rem;
+                text-align: center;
+            }
            }
            #phoneButtonTwo {
             color: @bg-color;
@@ -94,6 +150,12 @@
             border-radius: 10px;
             padding:1rem 8rem;
             font-size: 2.4rem;
+
+            @media @mobile {
+                width: 48%;
+                padding: 1rem 4rem;
+                text-align: center;
+            }
            }
     }
 }
@@ -101,17 +163,59 @@
 .imagesSection{
     width:80%;
     margin: 0 auto;
+
+    @media @mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
     img{
        width:33%;
        height:auto;
+    }
+    #imagesSectionOne {
+        @media @mobile {
+            display: none;
+        }
+    }
+    #imagesSectionTwo {
+        @media @mobile {
+            width: 48%;
+            height: auto;
+        }
+    }
+    #imagesSectionThree {
+        @media @mobile {
+            width: 48%;
+            height: auto;
+        }
     }
 }
 .videoSection{
     width:90%;
     margin:10rem auto 10rem auto;
-    
     display:flex;
     justify-content:space-between; 
+
+    @media @mobile {
+        margin: 4rem auto 4rem auto;
+    }
+
+    #videoOne {
+        @media @mobile {
+            width: 412.55px;
+        }
+    }
+    #videoTwo {
+        @media @mobile {
+            display: none;
+        }
+    }
+    #videoThree {
+        @media @mobile {
+            display: none;
+        }
+    }
 }
 .notAChefSection{
     display: flex;
@@ -124,21 +228,43 @@
     margin-bottom: 10rem;
     background-color: @section-color;
     color: @primary-color;
+
+    @media @mobile {
+        width: 100%;
+        font-size: 2.4rem;
+        margin: 0 auto;
+    }
 }
 
 .textSection{
     padding:15rem 0;
+
+    @media @mobile {
+        padding: 4rem 0 4rem 0;
+        
+    }
     h3{
         margin-left:25%;
         font-size: 4.8rem;
         color:@gray-color;
         padding-bottom: 5rem;
+
+        @media @mobile {
+            margin-left: 20%;
+            font-size: 2.4rem;
+        }
     }
     h2{
         padding-bottom:10rem;
         margin-left:25%;
         color:#C4C4C4;
         font-size: 6rem;
+
+        @media @mobile {
+            margin-left: 20%;
+            font-size: 3.6rem;
+            padding-bottom: 5rem;
+        }
 
     .Place{
          color:@primary-color
@@ -155,6 +281,10 @@
     justify-content: center;
     border-radius: 10px;
     align-items: flex-start;
+
+    @media @mobile {
+        margin: 0 auto;
+    }
   }
 }
 .lastImgSection{
@@ -164,6 +294,10 @@
     display:flex;
     justify-content:center;
     
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
 
     img{
         width:100%;

@@ -6,11 +6,23 @@
     justify-content: space-around;
     align-items: center;
 
+    @media @mobile {
+        margin: 0 auto;
+        flex-direction: column;
+        
+    }
+
     .chefPortTop {
         width: 20%;
         margin-left: 10%;
         font-size: 2.4rem;
 
+        @media @mobile {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 6rem 0 4rem 0;
+        }
         h1 {
             .Chef {
                 color: @primary-color;
@@ -29,6 +41,19 @@
         width: 60%;
         font-size: 2.1rem;
         color: white;
+
+        @media @mobile {
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        a {
+            @media @mobile {
+                padding-bottom: 4rem;
+            }
+        }
     }
     .navButton {
         width: 15%;
@@ -37,9 +62,17 @@
         color: @bg-color;
         padding: .8rem .2rem;
         margin-right: 6%;
+        margin-top: 4rem;
         display: flex;
         justify-content: center;
+        align-items: center;
         border-radius: 10px;
+        text-decoration: none;
+
+        @media @mobile {
+            width: 60%;
+            margin: 0 auto 4rem auto;
+        }
     }
 }
 .headerContainer {
@@ -57,6 +90,11 @@
         display: flex;
         justify-content: center;
         font-size: 7.2rem;
+
+        @media @mobile {
+            margin: -20% auto 0 auto;
+            font-size: 4.8rem;
+        }
 
         h1 {
             .Chef {
@@ -82,6 +120,9 @@
         color: @headernav-color;
         opacity: 50%;
 
+        @media @mobile {
+            display: none;
+        }
     }
     .headerSearch {
         display: flex;
@@ -92,6 +133,11 @@
         font-size: 1.8rem;
         background-color: @section-color;
 
+        @media @mobile {
+            width: 100%;
+            flex-direction: column;
+        }
+
         p {
             width: 55%;
             padding-top: 0.25%;
@@ -99,6 +145,12 @@
             font-size: 1.8rem;
             color: white;
             text-align: center;
+
+            @media @mobile {
+                width: 100%;
+                font-size: 1.4rem;
+                padding: 0.5rem 0;
+            }
             
         }
         input {
@@ -107,6 +159,9 @@
             color: @bg-color;
             border-radius: 5px;
 
+            @media @mobile {
+                width: 100%;
+            }
         }
     }
 }
