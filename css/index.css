@@ -152,6 +152,7 @@ p {
 a {
   font-family: 'Lato', sans-serif;
   font-style: normal;
+  text-decoration: none;
 }
 .topNav {
   width: 100%;
@@ -290,10 +291,10 @@ a {
   }
 }
 .headerContainer .headerSearch p {
-  width: 55%;
+  width: 45%;
   padding-top: 0.25%;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: white;
   text-align: center;
 }
@@ -306,7 +307,7 @@ a {
 }
 .headerContainer .headerSearch input {
   width: 45%;
-  background-color: #828080;
+  background-color: #1F1E1E;
   color: #1F1E1E;
   border-radius: 5px;
 }
@@ -709,4 +710,75 @@ footer p {
 .lastImgSection img {
   width: 100%;
   height: auto;
+}
+.aboutSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 1% 0%;
+  font-size: 1.8rem;
+  background-color: #2F2D2D;
+}
+@media (max-width: 500px) {
+  .aboutSearch {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.aboutSearch p {
+  width: 45%;
+  padding-top: 0.25%;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .aboutSearch p {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+  }
+}
+.aboutSearch input {
+  width: 45%;
+  background-color: #1F1E1E;
+  color: #1F1E1E;
+  border-radius: 5px;
+}
+@media (max-width: 500px) {
+  .aboutSearch input {
+    width: 100%;
+  }
+}
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.teamMembers .teamMemberCard {
+  color: white;
+  font-size: 3rem;
+  height: 360px;
+  width: 48%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .teamMembers .teamMemberCard {
+    width: 100%;
+  }
+}
+.teamMembers .teamMemberCard p {
+  color: #07FE20;
+  font-size: 1.5rem;
+}
+.teamMembers .teamMemberCard img {
+  width: 250px;
+  height: 275px;
 }
