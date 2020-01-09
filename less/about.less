@@ -1,6 +1,5 @@
 .aboutSearch {
-    display: flex;
-    justify-content: center;
+    .flexMixin(flex; center);
     align-items: center;
     flex-grow:1;
     padding: 1% 0%;
@@ -25,8 +24,7 @@
     }
     input {
         width: 45%;
-        background-color: @bg-color;
-        color: @bg-color;
+        .colorsMixin(@bg-color; @bg-color);
         border-radius: 5px;
 
         @media @mobile {
@@ -35,11 +33,11 @@
     }
 }
 .teamMembers{
-    display:flex;
+    .flexMixin(flex; space-evenly);
     flex-wrap:wrap; 
     width:80%;
     margin:0 auto;
-    justify-content:space-evenly;
+
     .teamMemberCard{
        color:white;
        font-size: 3rem;

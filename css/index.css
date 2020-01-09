@@ -149,17 +149,19 @@ p {
   font-family: 'Lato', sans-serif;
   font-style: normal;
 }
-a {
+a,
+a:visited {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   text-decoration: none;
+  color: white;
 }
 .topNav {
   width: 100%;
   margin: 5% 0% 1% 0%;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
+  flex-direction: row;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -214,7 +216,6 @@ a {
   width: 15%;
   font-size: 2.4rem;
   background-color: #07FE20;
-  color: #1F1E1E;
   padding: 0.8rem 0.2rem;
   margin-right: 6%;
   margin-top: 4rem;
@@ -229,6 +230,9 @@ a {
     width: 60%;
     margin: 0 auto 4rem auto;
   }
+}
+.topNav .navButton a {
+  color: #1F1E1E;
 }
 .headerContainer img {
   width: 100%;
@@ -267,13 +271,15 @@ a {
   justify-content: space-between;
   align-self: flex-end;
   font-size: 7.2rem;
-  color: #108E0C;
   opacity: 50%;
 }
 @media (max-width: 500px) {
   .headerContainer .headerNav {
     display: none;
   }
+}
+.headerContainer .headerNav a {
+  color: #108E0C;
 }
 .headerContainer .headerSearch {
   display: flex;
@@ -307,8 +313,8 @@ a {
 }
 .headerContainer .headerSearch input {
   width: 45%;
-  background-color: #1F1E1E;
   color: #1F1E1E;
+  background-color: #1F1E1E;
   border-radius: 5px;
 }
 @media (max-width: 500px) {
@@ -406,8 +412,8 @@ footer p {
   font-size: 6rem;
   padding-top: 1.2rem;
   padding-bottom: 2rem;
-  background-color: #2F2D2D;
   color: #07FE20;
+  background-color: #2F2D2D;
 }
 @media (max-width: 500px) {
   .headlineSection {
@@ -419,8 +425,8 @@ footer p {
 .navButton {
   width: 20%;
   font-size: 2.4rem;
-  background-color: #07FE20;
   color: #1F1E1E;
+  background-color: #07FE20;
   padding: 0.8rem 0.2rem;
   margin: 0 auto 4rem auto;
   display: flex;
@@ -433,6 +439,9 @@ footer p {
     width: 60%;
     margin: 0 auto 2rem auto;
   }
+}
+.navButton a {
+  color: #1F1E1E;
 }
 .interactSection {
   width: 80%;
@@ -468,8 +477,8 @@ footer p {
 }
 .interactSection .interactText ul {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
+  flex-direction: column;
   align-items: flex-start;
   height: 100%;
   width: 90%;
@@ -631,8 +640,8 @@ footer p {
   padding-top: 1.2rem;
   padding-bottom: 2rem;
   margin-bottom: 10rem;
-  background-color: #2F2D2D;
   color: #07FE20;
+  background-color: #2F2D2D;
 }
 @media (max-width: 500px) {
   .notAChefSection {
@@ -680,8 +689,8 @@ footer p {
 .textSection a {
   width: 60%;
   font-size: 2.4rem;
-  background-color: #07FE20;
   color: #1F1E1E;
+  background-color: #07FE20;
   padding: 0.8rem 0.2rem;
   margin: 0 auto 4rem auto;
   display: flex;
@@ -743,8 +752,8 @@ footer p {
 }
 .aboutSearch input {
   width: 45%;
-  background-color: #1F1E1E;
   color: #1F1E1E;
+  background-color: #1F1E1E;
   border-radius: 5px;
 }
 @media (max-width: 500px) {
@@ -754,10 +763,10 @@ footer p {
 }
 .teamMembers {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   width: 80%;
   margin: 0 auto;
-  justify-content: space-evenly;
 }
 .teamMembers .teamMemberCard {
   color: white;
